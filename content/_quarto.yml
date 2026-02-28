@@ -1,0 +1,49 @@
+project:
+  type: website
+  title: "AI Pros Bootcamp"
+  preview: 
+    port: 4600
+  output-dir: _site
+
+website:
+  navbar:
+    left:
+      - href: index.qmd
+        text: "Home"
+
+execute:
+  # https://quarto.org/docs/computations/python.html#kernel-daemon
+  daemon: 300
+  
+  # https://quarto.org/docs/computations/caching.html#jupyter-cache
+  cache: true
+
+  # https://quarto.org/docs/publishing/github-pages.html#freezing-computations
+  freeze: auto
+
+format:
+  html:
+    theme: [cosmo, custom.scss]
+    toc: true
+    toc-depth: 3
+    toc-title: "Contents"
+    anchor-sections: true
+    
+  revealjs:
+    theme: [default, custom.scss]
+    slide-number: c/t
+    show-slide-number: all
+    transition: slide
+    background-transition: fade
+    chalkboard: true
+    progress: true
+    history: false
+    scrollable: true
+    rtl: true
+    dir: rtl
+    width: 1600
+    height: 900
+    center: false
+
+number-depth: 1
+lightbox: auto

@@ -1,5 +1,27 @@
 # Instructions
 
+## Record Your Efforts with Git Commits (Mandatory)
+
+- One repository for the bootcamp
+- README contains your full name
+
+### Commits
+
+First, `git add` and `git commit` the exercise before solving it.
+
+Then, **for each question** in the exericse, you shall commit with three things:
+
+1. week number
+2. module number (if any)
+3. exercise number
+4. question number
+
+Example: `w1 m1 ex1 q2`
+
+### Push
+
+Work must be pushed before the deadline assigned for that exercise.
+
 ## Lab Setup
 
 ### A. Local Setup

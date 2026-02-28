@@ -12,10 +12,5 @@ experimental/
 
 scratch/
 
-# Temporarily ignore previous weeks
-/W1/
-/W2/
-/W3/
-/W4/
-/datasets/
-/data/
+/.quarto/
+**/*.quarto_ipynb
