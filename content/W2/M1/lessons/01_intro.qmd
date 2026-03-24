@@ -25,7 +25,7 @@ He then took this tabular data and visualized it. He took a street map of Soho a
 
 When the data was plotted spatially, a clear pattern emerged. The deaths were not spread evenly through the "bad air" of Soho. They were heavily concentrated in a specific cluster around the public water pump on Broad Street.
 
-![Death Counts Mapped in the neighborhood](./assets/snows-mapped-death-frequency.png)
+![Death Counts Mapped in the neighborhood](../../assets/snows-mapped-death-frequency.png)
 
 In data analysis, identifying a trend is only the first step; a robust model must also account for outliers and anomalies. Snow looked closely at the exceptions to his spatial pattern:
 
@@ -75,7 +75,7 @@ John Snow's work perfectly encapsulates the core process of data science, long b
 - **Math & Statistics** studies how to make robust conclusions based on incomplete information.
 - **Computer Science** is needed since data are stored on computers and processed by algorithms.
 
-![](./assets/Data-Science-Venn-Diagram.png)
+![](../../assets/Data-Science-Venn-Diagram.png)
 
 Image Source: https://www.researchgate.net/figure/Data-Science-Venn-Diagram_fig1_365946272
 
@@ -89,7 +89,7 @@ The use of computers does not give us more intelligence, it simply gives us the 
 
 ## Data Science Life Cycle
 
-![](./assets/DSLC.png)
+![](../../assets/DSLC.png)
 
 This image illustrates the standard **Data Science Life Cycle** (the sequence of steps required to turn raw data into useful tools or insights) and maps those steps to the specific job titles responsible for them.
 

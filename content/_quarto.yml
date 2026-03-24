@@ -6,6 +6,7 @@ project:
   output-dir: _site
   render: 
     - W1/
+    - W2/
 
 website:
   navbar:

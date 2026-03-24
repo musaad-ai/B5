@@ -1,107 +1,45 @@
-## Descriptive statistics
-
-***Descriptive statistics*** summarizes qualities of a group (of people or things) numerically and visually.
-
-Visual summaries uses graphical representations such as:
-
-- Histogram
-- Bar chart
-- Box plot
-
-![](./assets/data-viz-examples.png)
-
-Example: In Snow's case, the data is the location of the cholera deaths. The frequency is the number of deaths in each location. The measures of central tendency are the location of the most deaths. The measures of dispersion are the range of the locations of the deaths.
-
-## Inferential Statistics
-
-***Inferential Statistics*** goes beyond description and into:
-
-1. making informed guess about a group of people / items
-2. verify claims through data; e.g., coffee and sleep
-
-<img src="https://datatab.net/assets/tutorial/Descriptive_statistics_and_inferential_statistics.png">
-
-Source: Datatab.
-
-# Data Analysis
-
-> **Data analysis** is the process of inspecting, cleansing, transforming, and modeling data with the goal of discovering useful information, informing conclusions, and supporting decision-making.
-
-Two approaches to data analysis:
-
-## A. Top-Down (Confirmatory - CDA)
-
-Where we start with a question and use data to answer it.
-
-Example Hypothesis: "people are addicted to smart phones". Let's see if the data supports this.
-
-## B. Bottom-Up (Exploratory - EDA)
-
-We start with the data and try to find something interesting.
-
-Example Data: "people watching videos on our platform". Let's find out what piques their interest the most".
-
-## The 4 Types of Data Analytics
+# Data Analytics
 
 See [Data Analytics](https://www.coursera.org/articles/data-analytics) (a more general term than: Data Analysis).
 
-1. **Descriptive Analytics** (What happened?):
-   - This is the foundation of business reporting. It uses historical data to summarize performance.
-   - Example: A retail monthly sales report showing which regions met their quotas.
+## 1. Descriptive Analytics
 
-2. **Diagnostic Analytics** (Why did it happen?):
-   - This involves "drilling down" into the data to find dependencies and causes.
-   - Example: Investigating why sales dropped in May and discovering it was due to a specific supply chain bottleneck.
+Asks: **What happened?** This is the foundation of business reporting. It uses historical data to summarize performance.
 
-3. [**Predictive Analytics**](https://cloud.google.com/learn/what-is-predictive-analytics) (What will happen?):
-   - This uses statistical models and machine learning to forecast future trends.
-   - Example: A bank estimating the likelihood of a customer defaulting on a loan based on their credit history.
+Examples:
 
-4. **Prescriptive Analytics** (How can we make it happen?):
-   - The most advanced stage, where the analysis recommends specific actions to achieve an optimal outcome.
-   - Example: An airline's pricing algorithm automatically adjusting ticket costs in real-time based on demand and weather patterns.
+- A retail monthly sales report showing which regions met their quotas.
+- Screen Time: Your phone provides a weekly report showing you spent 5 hours on social media and 2 hours on productivity apps.
+- A social media dashboard summarizing total likes, shares, and mentions from the past week.
 
-## Communication Types
+## 2. Diagnostic Analytics
 
-### 1. Reporting
+Asks: **Why did it happen?** This involves "drilling down" into the data to find dependencies and causes.
 
-Reporting is the systematic tracking and formatting of data to show what is happening in the business, usually on a recurring basis.
+Examples:
 
-* **What it involves:** Building dashboards or automated reports that track Key Performance Indicators (KPIs) like daily active users or monthly recurring revenue.
-* **Why it matters:** It provides business stakeholders with a reliable, factual baseline of the company's health and historical performance.
+- Production Defects: Correlating a sudden spike in product returns to a single batch of faulty raw materials from a new supplier.
 
-### 2. Business Insights
+## 3. Predictive Analytics
 
-This is the ultimate "so what?" of data science. It is the ability to translate data findings into actionable, strategic recommendations.
+Asks: **What will happen?** This uses statistical models and machine learning to forecast future trends.
 
-* **What it involves:** Understanding the company's business model, recognizing how data impacts the bottom line, and recommending specific actions (e.g., "Because user retention drops on day 3, we should send a targeted discount email on day 2").
-* **Why it matters:** Data science is an investment. Business insights ensure that the investment actually generates value by guiding smarter decision-making.
+Examples:
 
-## Communication Skills and Tools
+- Demand Forecasting: A manufacturer uses historical orders and economic indicators to estimate how many units of a product they will need to produce for the holiday season.
+- Keyboard Autocomplete: Your phone predicts and suggests the next three words of your sentence based on your typing habits.
 
-### 1. Data Visualization
+## 4. Prescriptive Analytics
 
-This is the visual representation of data. It is the bridge between complex numbers and human cognition.
+Asks: **How can we make it happen?** The most advanced stage, where the analysis recommends specific actions to achieve an optimal outcome.
 
-* **What it involves:** Creating charts, graphs, and maps using tools like Tableau, Power BI, or Python libraries (matplotlib, seaborn, Plotly).
-* **Why it matters:** The human brain processes visual information much faster than spreadsheets. Good visualization makes trends, outliers, and patterns immediately obvious.
+Examples:
 
-### 2. Storytelling
+- Dynamic Inventory Management: An e-commerce platform automatically triggers discount codes for overstocked items while simultaneously increasing the price of low-stock, high-demand goods to maximize margin.
+- An airline's pricing algorithm automatically adjusting ticket costs in real-time based on demand and weather patterns.
+- Sleep Coaching: A fitness wearable analyzes your high stress levels and tells you to go to bed 30 minutes earlier tonight to ensure full recovery.
 
-Data storytelling is the art of crafting a narrative around data to guide the audience to a specific conclusion.
-
-* **What it involves:** Combining data, visualizations, and narrative. It means knowing your audience, setting the context, highlighting the conflict or opportunity, and presenting a logical flow.
-* **Why it matters:** Stakeholders rarely care about the technical details of a model. Storytelling translates complex analytical work into a compelling narrative that holds people's attention and persuades them.
-
-# Key Steps in Data Analytics
-
-### 3.3 Modeling
-
-1. Make **inference** about population from sample
-2. **Quantify relationships** (regression)
-3. **Hypothesis testing**
-
-## 1. Data Wrangling
+## Key Steps in Data Analytics
 
 ### 1.1 Data Loading
 
@@ -134,22 +72,22 @@ Prepare data for analysis by:
 ### 2.1 Scaling & Outlier Treatment
 
 1. Scale the data:
-    1. [**Normalize**](../techniques/02_transformation/normalize.ipynb)
+    1. Normalize
         - Log Transformation
-    2. [**Standardize**](../techniques/02_transformation/feature_scaling.ipynb)
+    2. Standardize
         - Z-score
         - Min-max Scaling
         - Robust Scaling
-2. [**Handle Outliers**](./L05_outliers.ipynb)
+2. Handle Outliers
     - Z-score method
     - IQR method
     - 95th percentile
     - 99th percentile
     - Domain knowledge
 3. Handle data imbalance
-4. Encode categorical variables (e.g., one-hot encoding)
+4. Encode categorical variables
 
-### 2.2 [Feature Engineering](../techniques/02_transformation/feature_engineering.ipynb)
+### 2.2 Feature Engineering
 
 Based on domain knowledge and questions to be answered:
 
@@ -173,7 +111,7 @@ Based on domain knowledge and questions to be answered:
     2. `orders_count` from `orders` table
     3. `maximum_amount` from `transactions` table
 
-### 2.3 [Feature Selection](../techniques/02_transformation/feature_selection.ipynb)
+### 2.3 Feature Selection
 
 1. Select Features
     1. Correlation Coefficient
@@ -214,6 +152,7 @@ Understand the relationship between multiple variables.
    - Bar plot
    - Stacked bar plot
    - Grouped bar plot
+
 
 # Python Packages for Data Analysis
 
