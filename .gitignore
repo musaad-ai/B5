@@ -19,3 +19,9 @@ _site/
 _freeze/
 .jupyter_cache/
 site_libs/
+.Ds_Store/
+.DS_Store
+content/datasets/WA_Marketing-Campaign.csv
+content/W2/data/WA_Marketing-Campaign.csv
+
+content/datasets/en.openfoodfacts.org.products.tsv
